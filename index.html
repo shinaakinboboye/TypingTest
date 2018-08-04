@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing Test | Check your typing speed and accuracy</title>
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="h2-container">
+            <h2>Typing Test</h2>
+        </div>
+
+        <div class="left-pane">
+
+            <div class = "pane1">
+                <label for="sample-text">Sample Text</label>
+                <div id = "sample-text">
+                <!-- Sample text goes here -->
+                </div>
+
+                <div class = "text-field">
+                    <textarea  name="" id="text-field" placeholder="Type sample text here..." cols="30" rows="3" spellcheck="false" autocomplete="off" onCopy = "return false" onCut = "return false" onPaste = "return false"></textarea>
+                </div>
+            </div>
+
+            <div  class = "pane2">
+                <label for="output-text">Output Text</label>
+                <div id="output-text"></div>
+            </div>
+
+        </div>
+
+        <div class="right-pane">
+
+            <label for=""> Status Info</label>
+
+            <div id = "message">
+                <h5>Start typing the sample text to begin test</h5>
+            </div>
+
+            <div id = "timer">
+                <!-- time string goes in here -->
+                <span><i class="ion-ios-timer"></i> timer</span>
+                <div>00: 00</div>
+            </div>
+
+            <div id ="word-count">
+                <!-- words-count -->
+                <span><i class="ion-pound"></i> word-count</span>    
+                <div>0</div>
+            </div>
+
+            <div id = "wpm">
+                <span><i class="ion-speedometer"></i> wpm</span>
+
+                 <!-- words-per-minute --> 
+                 <div></div>
+            </div>
+
+            <div id = "error">
+                <!-- error percentage -->
+                <span><i class="ion-alert"></i> error</span>
+                <div></div>
+            </div>
+          
+
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

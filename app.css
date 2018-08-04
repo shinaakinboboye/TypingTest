@@ -1,0 +1,245 @@
+
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Quattrocento', serif;
+    font-size: 18px;
+    line-height: 1.8
+}
+
+
+.container {
+    width: 70%;
+    margin: 15px auto
+}
+
+h2{
+    background-color: #f7f7f7;
+    padding: 12px;
+    font-size: 23px;
+    padding-left:20px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.1)!important;
+    border-radius: 3px
+
+}
+
+.h2-container {
+    padding:0 20px
+}
+
+
+/**********************************************
+*** LEFT PANE
+**********************************************/
+
+.left-pane {
+    float: left;
+    width: 75%;
+    border-right: 2px solid rgba(0,0,0,0.8);
+    padding: 15px 20px;
+}
+
+label {
+    background: #b8e069;
+    padding: 2px 12px;
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+#sample-text {
+    background: #fff;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,.1)!important;
+    border-bottom: none;
+    
+}
+
+.text-field {
+    background:#8ad8ff;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,.1)!important;
+    border-top: none;
+}
+
+textarea {
+    width: 85%;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 32px;
+    color: #5c5c5c;
+    border: 0;
+    overflow: hidden;
+    resize: none;
+    padding: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline-style: none;
+    outline-width: 0;
+
+}
+
+.pane2 {
+    margin-top: 40px
+}
+
+#output-text {
+       border: 1px solid rgba(0,0,0,.1)!important;
+       padding: 30px;
+       border-radius: 3px;
+}
+
+
+span.error {
+    background: red
+}
+
+i {
+    font-size:28px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+/**********************************************
+*** RIGHT PANE
+**********************************************/
+
+.right-pane {
+    float: right;
+    width: 25%;
+    padding: 15px 20px
+}
+
+#timer, #word-count, #wpm, #error { 
+    border: 1px solid  rgba(0,0,0,.1)!important;
+    padding: 2px 28px;
+    text-align: center;
+    border-radius:3px;
+}
+
+#timer div, #word-count div, #wpm div, #error div{
+    border-top: 1px solid #c1c1c1;
+    color: #28B9B5;
+    font-size: 27px;
+}
+
+#word-count, #wpm, #error {
+    margin-top: 20px
+}
+
+#error, #wpm {
+    display: none;
+}
+
+
+
+
+/**********************************************
+*** MEDIA QUERY
+**********************************************/
+@media (max-width: 1155px) { 
+
+     .container {
+        width: 100%;
+        margin: 15px auto
+    }
+
+    h2  {
+        background-color: #f7f7f7;
+        padding: 10px;
+        font-size: 16px;
+        padding-left:20px;
+        text-align: center;
+        border: 1px solid rgba(0,0,0,.1)!important;
+        border-radius: 3px
+
+    }
+
+    .h2-container {
+        padding:0 20px
+    }
+
+
+    .right-pane {
+        float: none;
+        width: 100%;
+        border-right: none;
+        padding: 15px 20px;
+    }
+
+
+     body {
+        font-size: 14px
+    }
+
+    .left-pane {
+        float: none;
+        width: 100%;
+        border-right:none;
+        padding: 15px 20px;
+    }
+
+
+    label {
+        background: #b8e069;
+        padding: 2px 12px;
+        display: inline-block;
+        margin-bottom: 12px;
+        font-weight: bold;
+    }
+
+    #sample-text {
+        background: #fff;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        padding: 30px;
+        border: 1px solid rgba(0,0,0,.1)!important;
+        border-bottom: none;
+        
+    }
+
+    .text-field {
+        background:#8ad8ff;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        padding: 30px;
+        border: 1px solid rgba(0,0,0,.1)!important;
+        border-top: none;
+    }
+
+    textarea {
+        width: 100%;
+        background-color: #fff;
+        font-size: 14px;
+        line-height: 20px;
+        color: #5c5c5c;
+        border: 0;
+        overflow: hidden;
+        resize: none;
+        padding: 12px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        outline-style: none;
+        outline-width: 0;
+
+    }
+
+}
+
+
